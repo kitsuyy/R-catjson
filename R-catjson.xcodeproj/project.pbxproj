@@ -13,6 +13,9 @@
 		0A47A91429181ADC002226DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47A91229181ADC002226DF /* Main.storyboard */; };
 		0A47A91629181ADD002226DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A47A91529181ADD002226DF /* Assets.xcassets */; };
 		0A47A91929181ADD002226DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47A91729181ADD002226DF /* LaunchScreen.storyboard */; };
+		0A47A92429182448002226DF /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A92329182448002226DF /* Cat.swift */; };
+		0A47A92729182BEA002226DF /* CatBoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A92629182BEA002226DF /* CatBoy.swift */; };
+		0A47A92A29182E25002226DF /* Xkcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A92929182E25002226DF /* Xkcd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0A47A91529181ADD002226DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A47A91829181ADD002226DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A47A91A29181ADD002226DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A47A92329182448002226DF /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		0A47A92629182BEA002226DF /* CatBoy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBoy.swift; sourceTree = "<group>"; };
+		0A47A92929182E25002226DF /* Xkcd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xkcd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		0A47A90B29181ADC002226DF /* R-catjson */ = {
 			isa = PBXGroup;
 			children = (
-				0A47A90C29181ADC002226DF /* AppDelegate.swift */,
-				0A47A90E29181ADC002226DF /* SceneDelegate.swift */,
-				0A47A91029181ADC002226DF /* ViewController.swift */,
-				0A47A91229181ADC002226DF /* Main.storyboard */,
+				0A47A922291822C1002226DF /* ViewControllers */,
+				0A47A92829182CA1002226DF /* Models */,
+				0A47A921291822B8002226DF /* Storyboards */,
+				0A47A920291822AF002226DF /* App */,
 				0A47A91529181ADD002226DF /* Assets.xcassets */,
-				0A47A91729181ADD002226DF /* LaunchScreen.storyboard */,
-				0A47A91A29181ADD002226DF /* Info.plist */,
 			);
 			path = "R-catjson";
+			sourceTree = "<group>";
+		};
+		0A47A920291822AF002226DF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A47A90C29181ADC002226DF /* AppDelegate.swift */,
+				0A47A90E29181ADC002226DF /* SceneDelegate.swift */,
+				0A47A91A29181ADD002226DF /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A47A921291822B8002226DF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0A47A91229181ADC002226DF /* Main.storyboard */,
+				0A47A91729181ADD002226DF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0A47A922291822C1002226DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A47A91029181ADC002226DF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A47A92829182CA1002226DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A47A92329182448002226DF /* Cat.swift */,
+				0A47A92929182E25002226DF /* Xkcd.swift */,
+				0A47A92629182BEA002226DF /* CatBoy.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A47A92429182448002226DF /* Cat.swift in Sources */,
 				0A47A91129181ADC002226DF /* ViewController.swift in Sources */,
 				0A47A90D29181ADC002226DF /* AppDelegate.swift in Sources */,
+				0A47A92A29182E25002226DF /* Xkcd.swift in Sources */,
+				0A47A92729182BEA002226DF /* CatBoy.swift in Sources */,
 				0A47A90F29181ADC002226DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TS9637RRZN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "R-catjson/Info.plist";
+				INFOPLIST_FILE = "R-catjson/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.R-catjson";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TS9637RRZN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "R-catjson/Info.plist";
+				INFOPLIST_FILE = "R-catjson/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.R-catjson";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

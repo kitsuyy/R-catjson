@@ -9,8 +9,8 @@ import UIKit
 
 enum Link: String {
     case catsUrl = "https://api.thecatapi.com/v1/images/search"
-    case catB = "https://api.catboys.com"
-    case xkcd = "https://xkcd.com/info.0.json"
+    case catBUrl = "https://api.catboys.com"
+    case xkcdUrl = "https://xkcd.com/info.0.json"
 }
 
 final class ViewController: UIViewController {
@@ -22,7 +22,7 @@ final class ViewController: UIViewController {
     }
     
     private func fetchList() {
-        guard let url = URL(string: Link.xkcd.rawValue) else { return }
+        guard let url = URL(string: Link.xkcdUrl.rawValue) else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {

@@ -7,11 +7,17 @@
 
 struct Cat: Decodable {
     let arr: Array<[Caty]>
+    
 }
 
 struct Caty: Decodable {
     let id: String
     let url: String
-    let width: String
-    let height: String
+    let width: Int
+    let height: Int
 }
+
+// [{"id":"2a4",
+// "url":"https://cdn2.thecatapi.com/images/2a4.jpg",
+// "width":300,
+// "height":400}]
